@@ -1,20 +1,66 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { ChakraProvider } from '@chakra-ui/react'
+import {
+  Button,
+  Container,
+  Nav,
+  Navbar,
+  NavbarBrand,
+  NavItem,
+  NavLink,
+} from 'reactstrap'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink as RRNavLink
+} from 'react-router-dom'
 
-import customTheme from './utils/theme'
-import Landing from './pages/Landing'
+import Home from './pages/Home'
+
+import './App.css'
+import logo from './assets/normal-logo.png'
 
 export default function App() {
   return (
-    <ChakraProvider theme={ customTheme }>
-      <Router>
+    <Router>
+      <Container>
+
+        <Navbar>
+          <NavbarBrand>
+            <img src={ logo } width="100" height="40" className="d-inline-block align-middle" />
+          </NavbarBrand>
+          <Nav>
+            <NavItem>
+              <NavLink
+                tag={ RRNavLink }
+                to="/docs"
+                exact
+              >
+                Docs
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                tag={ RRNavLink }
+                to="/app"
+                exact
+              >
+                Launch App
+              </NavLink>
+            </NavItem>
+          </Nav>
+        </Navbar>
+
         <Switch>
+          <Route path="/docs">
+            docs
+          </Route>
           <Route path="/">
-            <Landing />
+            <Home />
           </Route>
         </Switch>
-      </Router>
-    </ChakraProvider>
+
+      </Container>
+    </Router>
   )
 }
