@@ -18,6 +18,7 @@ import {
 import Home from './pages/Home'
 
 import './App.css'
+import '@fontsource/rubik'
 import logo from './assets/normal-logo.png'
 
 export default function App() {
@@ -25,11 +26,20 @@ export default function App() {
     <Router>
       <Container>
 
-        <Navbar>
+        <Navbar className="app-navbar">
           <NavbarBrand>
             <img src={ logo } width="100" height="40" className="d-inline-block align-middle" />
           </NavbarBrand>
           <Nav>
+            <NavItem>
+              <NavLink
+                tag={ RRNavLink }
+                to="/"
+                exact
+              >
+                Home
+              </NavLink>
+            </NavItem>
             <NavItem>
               <NavLink
                 tag={ RRNavLink }

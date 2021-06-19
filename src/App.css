@@ -1,3 +1,14 @@
 body {
   background-color: #e5e5e5;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-family: "Rubik";
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.app-navbar {
+  margin-bottom: 2rem;
 }
