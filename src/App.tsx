@@ -16,6 +16,7 @@ import {
 } from 'react-router-dom'
 import { BsBoxArrowInRight } from 'react-icons/bs'
 
+import Docs from './pages/Docs'
 import Home from './pages/Home'
 
 import './App.css'
@@ -69,7 +70,7 @@ export default function App() {
 
         <Switch>
           <Route path="/docs">
-            docs
+            <Docs />
           </Route>
           <Route path="/">
             <Home />
