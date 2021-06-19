@@ -14,6 +14,7 @@ import {
   Route,
   NavLink as RRNavLink
 } from 'react-router-dom'
+import { BsBoxArrowInRight } from 'react-icons/bs'
 
 import Home from './pages/Home'
 
@@ -33,6 +34,8 @@ export default function App() {
           <Nav>
             <NavItem>
               <NavLink
+                className="navlink"
+                activeClassName="active-navlink"
                 tag={ RRNavLink }
                 to="/"
                 exact
@@ -42,6 +45,8 @@ export default function App() {
             </NavItem>
             <NavItem>
               <NavLink
+                className="navlink"
+                activeClassName="active-navlink"
                 tag={ RRNavLink }
                 to="/docs"
                 exact
@@ -51,11 +56,12 @@ export default function App() {
             </NavItem>
             <NavItem>
               <NavLink
+                className="navlink"
                 tag={ RRNavLink }
                 to="/app"
                 exact
               >
-                Launch App
+                Launch App <BsBoxArrowInRight />
               </NavLink>
             </NavItem>
           </Nav>

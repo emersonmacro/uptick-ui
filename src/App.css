@@ -12,3 +12,15 @@ p {
 .app-navbar {
   margin-bottom: 2rem;
 }
+
+.navlink {
+  color: #000;
+}
+
+.navlink:hover {
+  color: #5d5d5d;
+}
+
+.active-navlink {
+  border-bottom: 1px solid #000;
+}

@@ -6,7 +6,7 @@ import InfoBox from '../components/InfoBox'
 import Spacer from '../components/Spacer'
 
 import './Home.css'
-import liquidityChart from '../assets/liquidity-chart.png'
+import liquidityChart from '../assets/dai-liquidity-chart.png'
 
 const Home = () => {
   
@@ -75,18 +75,9 @@ const Home = () => {
       </Row>
       <Row>
         <Col>
-          <p>How it works</p>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <Spacer includeTopMargin />
-        </Col>
-      </Row>
-      <Row>
-        <Col>
           <h3 className="text-center">Coming Soon</h3>
-          <p className="text-center">Contracts are under active development.</p>
+          <p className="text-center"><br />Contracts are under active development.</p>
+          <p className="text-center"><br /><a href="/docs">Read more about how Uptick works</a></p>
         </Col>
       </Row>
       <Row>
