@@ -29,7 +29,7 @@ export default function App() {
 
         <Navbar className="app-navbar">
           <NavbarBrand>
-            <img src={ logo } width="100" height="40" className="d-inline-block align-middle" />
+            <img src={ logo } width="100" height="40" className="d-inline-block align-middle" alt="Uptick Logo" />
           </NavbarBrand>
           <Nav>
             <NavItem>
@@ -55,7 +55,7 @@ export default function App() {
               </NavLink>
             </NavItem>
             <NavItem className="app-link-container">
-              <a href="https://github.com" target="_blank" className="app-link">
+              <a href="https://github.com" target="_blank" rel="noreferrer" className="app-link">
                 Launch App <BsBoxArrowInRight />
               </a>
             </NavItem>

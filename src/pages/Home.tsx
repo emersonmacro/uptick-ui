@@ -47,7 +47,7 @@ const Home = () => {
           </h5>
         </Col>
         <Col>
-          <img className="img-fluid liquidity-chart" src={ liquidityChart } />
+          <img className="img-fluid liquidity-chart" src={ liquidityChart } alt="Liquidity Chart" />
         </Col>
       </Row>
       <Row>

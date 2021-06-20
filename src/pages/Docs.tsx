@@ -71,9 +71,9 @@ const Docs = () => {
         </Col>
         <Col sm="1"></Col>
         <Col sm="4">
-          <img className="img-fluid liquidity-chart" src={ daiChart } />
-          <img className="img-fluid liquidity-chart" src={ ethChart } />
-          <img className="img-fluid liquidity-chart" src={ wbtcChart } />
+          <img className="img-fluid liquidity-chart" src={ daiChart } alt="DAI Chart" />
+          <img className="img-fluid liquidity-chart" src={ ethChart } alt="ETH Chart" />
+          <img className="img-fluid liquidity-chart" src={ wbtcChart } alt="WBTC Chart" />
         </Col>
       </Row>
       <Row>
