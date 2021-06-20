@@ -9,6 +9,10 @@ p {
   margin-bottom: 0;
 }
 
+a, a:hover {
+  color: #5d5d5d;
+}
+
 .app-navbar {
   margin-bottom: 2rem;
 }
@@ -23,4 +27,12 @@ p {
 
 .active-navlink {
   border-bottom: 1px solid #000;
+}
+
+.app-link-container {
+  padding-top: .5rem;
+}
+
+.app-link {
+  color: #000;
 }

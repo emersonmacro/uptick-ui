@@ -1,0 +1,13 @@
+.icon-spacer {
+  margin-left: .5rem;
+}
+
+.p-question {
+  margin-bottom: 1rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.p-answer {
+  margin-bottom: 1.5rem;
+}

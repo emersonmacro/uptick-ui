@@ -1,6 +1,5 @@
 import React from 'react'
 import {
-  Button,
   Container,
   Nav,
   Navbar,
@@ -55,15 +54,10 @@ export default function App() {
                 Docs
               </NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink
-                className="navlink"
-                tag={ RRNavLink }
-                to="/app"
-                exact
-              >
+            <NavItem className="app-link-container">
+              <a href="https://github.com" target="_blank" className="app-link">
                 Launch App <BsBoxArrowInRight />
-              </NavLink>
+              </a>
             </NavItem>
           </Nav>
         </Navbar>
