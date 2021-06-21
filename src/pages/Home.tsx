@@ -96,7 +96,14 @@ const Home = () => {
             >
               <span className="icon-spacer"><FaGithub size="3em" /></span>
             </a>
-            <span className="icon-spacer"><FaTwitter size="3em" /></span>
+            <a
+              href="https://twitter.com/UptickVaults"
+              target="_blank"
+              rel="noreferrer"
+              className="logo-link"
+            >
+              <span className="icon-spacer"><FaTwitter size="3em" /></span>
+            </a>
           </div>
         </Col>
       </Row>

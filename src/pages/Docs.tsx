@@ -88,8 +88,22 @@ const Docs = () => {
       <Row>
         <Col>
           <div className="text-center">
-            <span className="icon-spacer"><FaGithub size="3em" /></span>
-            <span className="icon-spacer"><FaTwitter size="3em" /></span>
+            <a
+              href="https://github.com/emersonmacro/uptick-contracts"
+              target="_blank"
+              rel="noreferrer"
+              className="logo-link"
+            >
+              <span className="icon-spacer"><FaGithub size="3em" /></span>
+            </a>
+            <a
+              href="https://twitter.com/UptickVaults"
+              target="_blank"
+              rel="noreferrer"
+              className="logo-link"
+            >
+              <span className="icon-spacer"><FaTwitter size="3em" /></span>
+            </a>
           </div>
         </Col>
       </Row>
