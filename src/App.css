@@ -36,3 +36,9 @@ a, a:hover {
 .app-link {
   color: #000;
 }
+
+.app-link-disabled {
+  color: #8c8c8c;
+  pointer-events: none; 
+  cursor: default; 
+}

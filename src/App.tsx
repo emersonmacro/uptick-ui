@@ -54,11 +54,21 @@ export default function App() {
                 Docs
               </NavLink>
             </NavItem>
-            <NavItem className="app-link-container">
-              <a href="https://github.com" target="_blank" rel="noreferrer" className="app-link">
+            <div className="app-link-container">
+              <a className="app-link-disabled" title="Coming Soon">
                 Launch App <BsBoxArrowInRight />
               </a>
-            </NavItem>
+            </div>
+            {/* <NavItem className="app-link-container">
+              <a
+                href="https://github.com"
+                target="_blank"
+                rel="noreferrer"
+                className="app-link"
+              >
+                Launch App <BsBoxArrowInRight />
+              </a>
+            </NavItem> */}
           </Nav>
         </Navbar>
 

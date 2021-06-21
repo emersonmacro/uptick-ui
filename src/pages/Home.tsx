@@ -88,7 +88,14 @@ const Home = () => {
       <Row>
         <Col>
           <div className="text-center">
-            <span className="icon-spacer"><FaGithub size="3em" /></span>
+            <a
+              href="https://github.com/emersonmacro/uptick-contracts"
+              target="_blank"
+              rel="noreferrer"
+              className="logo-link"
+            >
+              <span className="icon-spacer"><FaGithub size="3em" /></span>
+            </a>
             <span className="icon-spacer"><FaTwitter size="3em" /></span>
           </div>
         </Col>

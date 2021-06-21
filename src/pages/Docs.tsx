@@ -29,6 +29,10 @@ const Docs = () => {
       question: 'Why wouldn\'t I just provide liquidity on Uniswap V3 myself?',
       answerText: 'Hello world',
     },
+    {
+      question: 'Is there a token?',
+      answerText: 'Hello world',
+    },
   ]
 
   return (
