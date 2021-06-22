@@ -18,7 +18,7 @@ const QnA = ({ question, answerText }) => {
         { question }<span className="icon-spacer">{ getIcon(isOpen) }</span>
       </p>
       <Collapse isOpen={ isOpen }>
-        <p className="p-answer">{ answerText }</p>
+        <p className="p-answer" dangerouslySetInnerHTML={ { __html: answerText } }></p>
       </Collapse>
     </div>
   )
@@ -27,4 +27,4 @@ const QnA = ({ question, answerText }) => {
 
 export default QnA
 
-const getIcon = (isOpen) => isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />
+const getIcon = (isOpen: boolean) => isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />

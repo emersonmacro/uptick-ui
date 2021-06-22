@@ -15,23 +15,27 @@ const Docs = () => {
   const qnaData = [
     {
       question: 'What is Uptick?',
-      answerText: 'Hello world',
+      answerText: 'Uptick is building a series of simple vaults on Uniswap V3. The initial vaults will take single-token deposits and deploy liquidity to stable pairs. See \'How it works\' for more information.',
     },
     {
       question: 'What is Uniswap V3?',
-      answerText: 'Hello world',
+      answerText: 'Uniswap is an automated market maker (AMM) protocol. Uniswap V3, which launched in May 2021, has some exciting new features, such as concentrated liquidity. See <a href="https://uniswap.org/" target="_blank">https://uniswap.org</a> to learn more.',
     },
     {
       question: 'What vaults are available?',
-      answerText: 'Hello world',
+      answerText: 'Uptick vaults are currently under active development. The initial launch plan includes three vaults: ETH vault (which will likely supply liquidity to the ETH-sETH pair), DAI vault (which will likely supply liquidity to the DAI-USDC pair), and WBTC vault (which will likely supply liquidity to the WBTC-renBTC pair). Areas that are being explored for future vaults include vaults that supply liquidity to multiple trading pairs and vaults that supply liquidity on higher-fee volatile pairs.',
     },
     {
       question: 'Why wouldn\'t I just provide liquidity on Uniswap V3 myself?',
-      answerText: 'Hello world',
+      answerText: 'You certainly can! However, some users aren\'t comfortable providing liquidity on Uniswap themselves (and doing so is a lot more complicated on Uniswap V3). In addition, you would have to manage the position range yourself while watching out for impermanent loss, and pay all gas fees yourself. If you don\'t want to worry about all of that yourself, you can use Uptick vaults to manage your position for you.',
+    },
+    {
+      question: 'Does Uptick charge fees?',
+      answerText: 'The exact mechanics of the protocol are still being finalized. The smart contracts will likely include a variable called <code>protocolFee</code>, which would take a small percentage of <i>profits</i> (i.e. trading fees earned from the Uniswap pools) as a protocol fee. The protocol fee might be set to 0 at launch.',
     },
     {
       question: 'Is there a token?',
-      answerText: 'Hello world',
+      answerText: 'There is no Uptick token at this time.',
     },
   ]
 

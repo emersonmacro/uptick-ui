@@ -17,7 +17,7 @@ const InfoBox = ({ title, icon, text }) => {
 
 export default InfoBox
 
-function getIcon(icon) {
+function getIcon(icon: string) {
   switch (icon) {
     case 'coin':
       return <BiCoin size="2em" />
