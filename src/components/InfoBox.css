@@ -1,0 +1,11 @@
+.info-box-container {
+  border: 1px solid #000;
+  border-radius: 0.4rem;
+  width: 100%;
+  min-height: 5rem;
+  padding: 1rem;
+}
+
+.icon-line {
+  margin-bottom: .5rem;
+}

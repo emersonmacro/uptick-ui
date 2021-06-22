@@ -1,0 +1,17 @@
+.page-row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.liquidity-chart {
+  width: 100%;
+}
+
+.icon-spacer {
+  margin-left: .75rem;
+  margin-right: .75rem;
+}
+
+.logo-link {
+  color: #000;
+}

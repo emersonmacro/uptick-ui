@@ -1,0 +1,13 @@
+.spacer-container {
+  margin-bottom: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.with-top-margin {
+  margin-top: 3rem;
+}
+
+.spacer-inner {
+  border-bottom: 1px solid #000;
+}

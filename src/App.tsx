@@ -1,20 +1,87 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { ChakraProvider } from '@chakra-ui/react'
+import {
+  Container,
+  Nav,
+  Navbar,
+  NavbarBrand,
+  NavItem,
+  NavLink,
+} from 'reactstrap'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink as RRNavLink
+} from 'react-router-dom'
+import { BsBoxArrowInRight } from 'react-icons/bs'
 
-import customTheme from './utils/theme'
-import Landing from './pages/Landing'
+import Docs from './pages/Docs'
+import Home from './pages/Home'
+
+import './App.css'
+import '@fontsource/rubik'
+import logo from './assets/normal-logo.png'
 
 export default function App() {
   return (
-    <ChakraProvider theme={ customTheme }>
-      <Router>
+    <Router>
+      <Container>
+
+        <Navbar className="app-navbar">
+          <NavbarBrand>
+            <img src={ logo } width="100" height="40" className="d-inline-block align-middle" alt="Uptick Logo" />
+          </NavbarBrand>
+          <Nav>
+            <NavItem>
+              <NavLink
+                className="navlink"
+                activeClassName="active-navlink"
+                tag={ RRNavLink }
+                to="/"
+                exact
+              >
+                Home
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                className="navlink"
+                activeClassName="active-navlink"
+                tag={ RRNavLink }
+                to="/docs"
+                exact
+              >
+                Docs
+              </NavLink>
+            </NavItem>
+            <div className="app-link-container">
+              <a className="app-link-disabled" title="Coming Soon">
+                Launch App <BsBoxArrowInRight />
+              </a>
+            </div>
+            {/* <NavItem className="app-link-container">
+              <a
+                href="https://github.com"
+                target="_blank"
+                rel="noreferrer"
+                className="app-link"
+              >
+                Launch App <BsBoxArrowInRight />
+              </a>
+            </NavItem> */}
+          </Nav>
+        </Navbar>
+
         <Switch>
+          <Route path="/docs">
+            <Docs />
+          </Route>
           <Route path="/">
-            <Landing />
+            <Home />
           </Route>
         </Switch>
-      </Router>
-    </ChakraProvider>
+
+      </Container>
+    </Router>
   )
 }
