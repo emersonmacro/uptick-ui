@@ -55,9 +55,9 @@ export default function App() {
               </NavLink>
             </NavItem>
             <div className="app-link-container">
-              <a className="app-link-disabled" title="Coming Soon">
+              <div className="app-link-disabled">
                 Launch App <BsBoxArrowInRight />
-              </a>
+              </div>
             </div>
             {/* <NavItem className="app-link-container">
               <a
